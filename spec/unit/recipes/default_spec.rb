@@ -23,7 +23,7 @@ describe 'python::default' do
       expect(chef_run).to update_apt_update('update_sources')
     end
     it "should install python 2.7" do
-      expect(chef_run).to install_package('python 2.7')
+      expect(chef_run).to install_package('python2.7')
     end
     it "should install python-pip" do
       expect(chef_run).to install_package('python-pip')
